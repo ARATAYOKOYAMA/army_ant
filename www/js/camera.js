@@ -22,7 +22,7 @@
       // Get image handle
       //
       var smallImage = document.getElementById('smallImage');
-    
+
       // Unhide image elements
       //
       smallImage.style.display = 'block';
