@@ -9,11 +9,45 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
         var app = angular.module('gekioshi', ['onsen']);
+        ons.ready(function() {
+            tabbar.on('prechange', function(event) {
+                var page = event.index;
+                if(page==0){
+                    //alert("ホーム");
+                }
+                if(page==1){
+                    //alert("写真");
+                }
+            });
+        });
     </script>
+    <script src="js/camera.js"></script>
 </head>
 <body>
 	<ons-navigator var="myNavigator">
-        <ons-button onclick="myNavigator.pushPage('home.html')">スタート</ons-button>
+        <ons-page>
+            <ons-tabbar var="tabbar">
+                <ons-tabbar-item
+                icon="ion-ios-calendar-outline"
+                label="イベント"
+                page="home.html"
+                active="true"></ons-tabbar-item>
+                <ons-tabbar-item
+                icon="ion-ios-chatboxes-outline"
+                label="お知らせ"
+                page="picture.html"
+                ></ons-tabbar-item>
+                <ons-tabbar-item
+                icon="gear"
+                label="設定"
+                page="config.html"></ons-tabbar-item>
+                <ons-tabbar-item
+                icon="ion-compose"
+                label="編集モード"
+                page="edit_mode.html">
+                </ons-tabbar-item>
+            </ons-tabbar>
+        </ons-page>
     </ons-navigator>
 </body>
 </html>
