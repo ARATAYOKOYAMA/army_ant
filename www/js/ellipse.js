@@ -25,7 +25,6 @@ function waist(waist_front, waist_side){
         Math.pow(waist_side/2, 2) * Math.pow(Math.sin(i), 2)); 
     }
     waist = waist * 4; 
-    //return waist; 
+    return waist; 
     alert(waist);
-    //document.getElementById("person_waist").value = waist;
 };
