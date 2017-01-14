@@ -1,14 +1,35 @@
 <ons-page>
     <ons-toolbar>
-        <div class="center">Navigator</div>
+        <div class="center">ホーム</div>
     </ons-toolbar>
 
     <div style="text-align: center">
-        <br>
+        <!--<br>
         <ons-button
             onclick="myNavigator.pushPage('page2.html')">
-            Push Page 2
-        </ons-button>
+            ホーム
+        </ons-button>-->
     </div>
-
+        <ons-row>
+            <ons-col width="40%">
+                <p class="pic_background">
+                    <img src="hito.png" class="pic01">
+                </p>
+            </ons-col>
+            <ons-col width="60%">
+                <p class="person_background background_top">
+                    身長
+                    <sapn id="person_height">未入力</span>
+                </p>
+                <p class="person_background background_mid">
+                    体重
+                    <span id="person_weight">未入力</span>
+                </p>
+                <p class="person_background background_bottom">
+                    ウエスト
+                    <span id="person_waist">未入力</span>
+                </p>
+            </ons-col>
+        </ons-row>
+        <ons-button onclick="waist(waist_front(170, 20, 30), waist_side(170, 20, 30));">テスト</ons-button>
 </ons-page>
