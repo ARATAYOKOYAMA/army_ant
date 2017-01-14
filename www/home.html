@@ -1,6 +1,7 @@
-<ons-page>
+<ons-page ng-controller="HomeCtrl">
     <ons-toolbar>
         <div class="center">ホーム</div>
+        <div class="right"><ons-toolbar-button onclick="myNavigator.pushPage('personal_data.html')"><ons-icon icon="fa-plus"></ons-icon></ons-toolbar-button></div>
     </ons-toolbar>
 
     <div style="text-align: center">
@@ -14,11 +15,11 @@
             <ons-col width="60%">
                 <p class="person_background background_top">
                     身長
-                    <sapn id="person_height">未入力</span>
+                    {{height}}
                 </p>
                 <p class="person_background background_mid">
                     体重
-                    <span id="person_weight">未入力</span>
+                    {{weight}}
                 </p>
                 <p class="person_background background_bottom">
                     ウエスト
@@ -26,5 +27,6 @@
                 </p>
             </ons-col>
         </ons-row>
+        <ons-button onclick="clearStorage();">リセット</ons-button>
         <ons-button onclick="waist(waist_front(170, 20, 30), waist_side(170, 20, 30));">テスト</ons-button>
 </ons-page>

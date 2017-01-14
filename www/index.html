@@ -11,22 +11,20 @@
     <script>
         var app = angular.module('gekioshi', ['onsen']);
         ons.ready(function() {
-            tabbar.on('prechange', function(event) {
+            tabbar.on('postchange', function(event) {
                 var page = event.index;
                 if(page==0){
-                    //alert("ホーム");
-                    //waist(waist_front(170, 20, 30), waist_side(170, 20, 30));
-                    //waist_front(170, 20, 30);
-                    //test();
                 }
                 if(page==1){
-                    //alert("写真");
                 }
             });
         });
     </script>
+    <script src="js/vars.js"></script>
     <script src="js/camera.js"></script>
     <script src="js/ellipse.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/personal_data.js"></script>
     <script src="js/trimming_upload.js"></script>
 </head>
 <body>

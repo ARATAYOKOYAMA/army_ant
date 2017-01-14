@@ -16,6 +16,8 @@
     // Called when a photo is successfully retrieved
     //
     function onPhotoDataSuccess(imageData) {
+        
+        waist(waist_front(personalList.Height, 20, 30), waist_side(personalList.Height, 20, 30));
       // Uncomment to view the base64-encoded image data
       // console.log(imageData);
 
