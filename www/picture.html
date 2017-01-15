@@ -3,19 +3,30 @@
         <div class="center">Sizing</div>
     </ons-toolbar>
 
-    <button onclick="capturePhoto();">Capture Photo</button> <br>
-    <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
-    <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
     <ons-row>
         <ons-col>
             <img style="display:none;width:300%;" id="smallImage" src="" />
         </ons-col>
-        <ons-col>
+<!--        <ons-col>
              <input type="range" id="range" value="50" min="0" max="100" step="1" />
         </ons-col>
+-->    </ons-row>
+<div style="text-align:center;">
+    <ons-row>
+        <ons-col>
+            <div style="font-size: 12px;">身体の側面の写真を入れてね</div>
+            <img style="display:none; width:70%;" id="largeImage1" src="" />
+            <ons-button onclick="hyouzi(largeImage1.width, largeImage1.height);">決定</ons-button> 
+        </ons-col>
+        <ons-col>
+            <div style="font-size: 12px;">身体の正面の写真を入れてね</div>
+            <img style="display:none; width:70%;" id="largeImage2" src="" />
+            <ons-button onclick="hyouzi(largeImage2.width, largeImage2.height);">決定</ons-button> 
+        </ons-col>
     </ons-row>
-    <!--<img style="display:none;" id="largeImage" src="" />-->
-    <ons-button onclick="alert(document.getElementById('range').value);">決定</ons-button>
-
+    <!--<p id="test1">0, 0</p><br> 
+    <p id="test2">0, 0</p> -->
+    <ons-button onclick="keisan();">計算</ons-button>
+</div>
 </ons-page>

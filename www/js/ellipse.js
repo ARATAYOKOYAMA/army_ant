@@ -26,5 +26,4 @@ function waist(waist_front, waist_side){
     }
     waist = waist * 4; 
     return waist; 
-    alert(waist);
 };
