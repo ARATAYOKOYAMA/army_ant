@@ -7,6 +7,7 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/picture.css">
     <script>
         var app = angular.module('gekioshi', ['onsen']);
@@ -32,24 +33,19 @@
         <ons-page>
             <ons-tabbar var="tabbar">
                 <ons-tabbar-item
-                icon="ion-ios-calendar-outline"
-                label="イベント"
+                icon="ion-ios-home-outline"
+                label="ホーム"
                 page="home.html"
                 active="true"></ons-tabbar-item>
                 <ons-tabbar-item
-                icon="ion-ios-chatboxes-outline"
-                label="お知らせ"
+                icon="ion-ios-camera-outline"
+                label="カメラ"
                 page="picture.html"
                 ></ons-tabbar-item>
                 <ons-tabbar-item
                 icon="gear"
                 label="設定"
                 page="config.html"></ons-tabbar-item>
-                <ons-tabbar-item
-                icon="ion-compose"
-                label="編集モード"
-                page="sample.html">
-                </ons-tabbar-item>
             </ons-tabbar>
         </ons-page>
     </ons-navigator>

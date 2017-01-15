@@ -5,3 +5,4 @@ var person_weight;
 var person_waist;
 var personalList;
 var personalWaist;
+var personalFootH;
