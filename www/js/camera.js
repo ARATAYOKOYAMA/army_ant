@@ -16,12 +16,11 @@
     // Called when a photo is successfully retrieved
     //
     function onPhotoDataSuccess(imageData) {
-        
-        //ウエストの値をローカルストレージに保存
-        person_waist = waist(waist_front(personalList.Height, 20, 30), waist_side(personalList.Height, 20, 30));
-        localStorage.setItem('personalWaist', JSON.stringify({
-                   Waist: person_waist,
-                 }));
+        //ウエストの値をローカルストレージに保存(身長未入力だと走らない)
+        // person_waist = waist(waist_front(personalList.Height, 20, 30), waist_side(personalList.Height, 20, 30));
+        // localStorage.setItem('personalWaist', JSON.stringify({
+        //            Waist: person_waist,
+        //          }));
       // Uncomment to view the base64-encoded image data
       // console.log(imageData);
 
@@ -64,7 +63,7 @@
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-        destinationType: destinationType.DATA_URL, saveToPhotoAlbum: false });
+        destinationType: destinationType.DATA_URL, saveToPhotoAlbum: false, targetWidth: 200, targetHeight: 200 });
     }
 
     // A button will call this function

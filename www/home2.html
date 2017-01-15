@@ -1,0 +1,33 @@
+<ons-page ng-controller="HomeCtrl">
+   <ons-toolbar>
+       <div class="center">入力</div>
+       <div class="left">
+           <ons-back-button>戻る</ons-back-button>
+       </div>
+   </ons-toolbar>
+   <div style="text-align: center"> </div>
+   <ons-row>
+       <ons-col width="40%">
+           <p class="pic_background"> <img src="hito.png" class="pic01"> </p>
+       </ons-col>
+       <ons-col width="60%">
+           <p class="person_background background_top">
+           <ons-row>
+               身長
+               <input type="text" placeholder="身長" id="height" />cm
+           </ons-row>
+           </p>
+           <p class="person_background background_mid">
+           <ons-row>
+               体重
+               <input type="text" placeholder="体重" id="weight" />kg
+           </ons-row>
+           </p>
+           <p class="person_background background_bottom"> ウエスト {{waist}}cm </p>
+           <p class="person_background background_bottom2"> 股下 {{footh}}cm </p>
+       </ons-col>
+   </ons-row>
+   <ons-button onclick="clearStorage();">リセット</ons-button>
+   <ons-button onclick="setStorage();">決定</ons-button>
+   >
+</ons-page>

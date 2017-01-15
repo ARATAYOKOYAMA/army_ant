@@ -1,0 +1,41 @@
+/* This is a CSS file */
+
+/**/
+img.pic01 {
+    display: block;
+    width: 220%;
+    margin-top: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic_background {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.person_background {
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: #FFFFFF;
+}
+
+.person_enter {
+    text-align: center;
+}
+
+.background_top {
+    margin-top:30%;
+}
+
+.background_mid {
+    margin-top:15%;
+}
+
+.background_bottom {
+    margin-top:40%;
+}
+
+.background_bottom2 {
+    margin-top:30%;
+}

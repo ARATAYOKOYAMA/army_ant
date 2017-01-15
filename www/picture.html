@@ -3,18 +3,19 @@
         <div class="center">Navigator</div>
     </ons-toolbar>
 
-    <div style="text-align: center">
-        <br>
-        <ons-button
-            onclick="myNavigator.pushPage('page2.html')">
-            写真
-        </ons-button>
     <button onclick="capturePhoto();">Capture Photo</button> <br>
     <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
     <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
     <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
-    <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-    <img style="display:none;" id="largeImage" src="" />
-    </div>
+    <ons-row>
+        <ons-col>
+            <img style="display:none;width:300%;" id="smallImage" src="" />
+        </ons-col>
+        <ons-col>
+             <input type="range" id="range" value="50" min="0" max="100" step="1" />
+        </ons-col>
+    </ons-row>
+    <!--<img style="display:none;" id="largeImage" src="" />-->
+    <ons-button onclick="alert(document.getElementById('range').value);">決定</ons-button>
 
 </ons-page>
