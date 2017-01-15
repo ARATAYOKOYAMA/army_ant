@@ -1,12 +1,9 @@
 <ons-page ng-controller="HomeCtrl">
     <ons-toolbar>
-        <div class="center">ホーム</div>
-        <div class="right"><ons-toolbar-button onclick="myNavigator.pushPage('personal_data.html')"><ons-icon icon="fa-plus"></ons-icon></ons-toolbar-button></div>
+        <div class="center">Home</div>
     </ons-toolbar>
-
-    <div style="text-align: center">
-    </div>
-        <ons-row>
+    
+        <ons-row class="back_ground_color">
             <ons-col width="40%">
                 <p class="pic_background">
                     <img src="hito.png" class="pic01">
@@ -38,5 +35,5 @@
                 </p>
             </ons-col>
         </ons-row>
-        <ons-button onclick="clearStorage();">リセット</ons-button>
+        
 </ons-page>
