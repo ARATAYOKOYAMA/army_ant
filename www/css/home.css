@@ -1,6 +1,11 @@
 /* This is a CSS file */
 
 /**/
+
+.back_ground_color {
+    background-color: #AFEEEE;
+    height: 100%;
+}
 img.pic01 {
     display: block;
     width: 220%;
@@ -18,6 +23,7 @@ img.pic01 {
     margin-left: 20%;
     margin-right: 10%;
     background-color: #FFFFFF;
+    border-radius: 10px;
 }
 
 .person_enter {
@@ -26,16 +32,26 @@ img.pic01 {
 
 .background_top {
     margin-top:30%;
+    border-color: blue;
+    border-style: solid;
 }
 
 .background_mid {
     margin-top:15%;
+    border-color: blue;
+    border-style: solid;
 }
 
 .background_bottom {
     margin-top:40%;
+    border: 3.5px blue;
+    border-style:double;
+    font-size: 14px;
 }
 
 .background_bottom2 {
     margin-top:30%;
+    border:3.5px blue;
+    border-style: double;
+    font-size: 14px;
 }
