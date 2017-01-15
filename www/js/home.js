@@ -7,6 +7,7 @@
 */
 function clearStorage() {
     //localStorage.removeItem('personalList');
+    //localStorage.removeItem('personalList');
 }
 
 
@@ -25,8 +26,14 @@ app.controller('HomeCtrl', function ($scope) {//HomeCtrlという名前のコン
     $scope.footh = "未入力";
     //それぞれ、存在したら格納
     if (personalList){
-        if(personalList.Height != "")$scope.height = personalList.Height;
-        if(personalList.Weight != "")$scope.weight = personalList.Weight;
+        if(personalList.Height != ""){
+            $scope.height = personalList.Height;
+            person_height = personalList.Height;
+        }
+        if(personalList.Weight != ""){
+            $scope.weight = personalList.Weight;
+            person_weight = personalList.Weight;
+        }
     }else {}
     if (personalWaist){
         if(personalWaist.Waist != "")$scope.waist = personalWaist.Waist;
